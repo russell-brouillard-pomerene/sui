@@ -1,0 +1,10 @@
+# Ignore all build artifacts and temporary files
+/build/
+target/
+debug/
+release/
+*.tmp
+*.log
+
+# Ignore Move CLI generated files
+Move.lock
