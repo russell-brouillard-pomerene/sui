@@ -48,10 +48,12 @@ module pomerene::pomerene {
        
     }
 
-    // public entry fun delete_scanner(scannerObject: &mut Scanner) {
-    //     let Scanner { id, description: _, location: _ } = scannerObject;
-    //     object::delete(id);
-    // }
+
+    #[allow(unused_field)]
+    public entry fun delete_scanner(scannerObject: Scanner) {
+        let Scanner { id, description: _, location: _ } = scannerObject;
+        object::delete(id);
+    }
 
 
     #[allow(unused_field)]
